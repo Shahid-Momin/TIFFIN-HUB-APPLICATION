@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstAdminUse.Admin_AdditemActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/addandback"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="38dp"
+                android:src="@drawable/left_arrow_svgrepo_com__1_"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Add Item"
+                android:textAlignment="viewStart"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/addandback"
+                app:layout_constraintTop_toTopOf="@+id/addandback" />
+
+            <EditText
+                android:id="@+id/AdminEnterVendorname"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/edit_text"
+                android:elevation="5dp"
+                android:hint="Enter Vendor Name"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+            <EditText
+                android:id="@+id/AdminEnterfoodname"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/edit_text"
+                android:elevation="5dp"
+                android:hint="Enter Food Name"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/AdminEnterVendorname" />
+
+            <EditText
+                android:id="@+id/EnterfoodpriceAdmin"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/edit_text"
+                android:elevation="5dp"
+                android:hint="Enter Food Price"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="@id/AdminEnterfoodname"
+                app:layout_constraintStart_toStartOf="@id/AdminEnterfoodname"
+                app:layout_constraintTop_toBottomOf="@+id/AdminEnterfoodname" />
+
+            <TextView
+                android:id="@+id/SelecteImageForAddMenuAdmin"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="14dp"
+                android:drawableRight="@drawable/plus_svgrepo_com__1_"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:elevation="5dp"
+                android:paddingRight="15dp"
+                android:text="Select Image"
+                android:textColor="@color/black"
+                android:background="@drawable/edit_text"
+                app:layout_constraintEnd_toEndOf="@+id/EnterfoodpriceAdmin"
+                app:layout_constraintStart_toStartOf="@+id/EnterfoodpriceAdmin"
+                app:layout_constraintTop_toBottomOf="@+id/EnterfoodpriceAdmin" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/SelecteImageForAddMenuAdmin"
+                app:layout_constraintStart_toStartOf="@+id/SelecteImageForAddMenuAdmin"
+                app:layout_constraintTop_toBottomOf="@+id/SelecteImageForAddMenuAdmin">
+
+
+                <ImageView
+                    android:id="@+id/selectedimage"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/addimage" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:elevation="5dp"
+                android:background="@drawable/edit_text"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="Short Description"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/SelecteImageForAddMenuAdmin"
+                app:layout_constraintTop_toBottomOf="@+id/cardView12" />
+
+            <EditText
+                android:id="@+id/FoodDescriptionForMenuAdmin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:hint="Add Here Description"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/textView34"
+                app:layout_constraintStart_toStartOf="@+id/textView34"
+                app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="12dp"
+                android:elevation="5dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/edit_text"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="Food Ingredient"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/FoodDescriptionForMenuAdmin"
+                app:layout_constraintStart_toStartOf="@+id/FoodDescriptionForMenuAdmin"
+                app:layout_constraintTop_toBottomOf="@+id/FoodDescriptionForMenuAdmin" />
+
+            <EditText
+                android:id="@+id/FoodIngredentForMenuAdmin"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/white"
+                android:hint="Add Food Ingredient"
+                app:layout_constraintEnd_toEndOf="@+id/textView35"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView35"
+                app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/AddItemButtonAdmin"
+                android:layout_width="157dp"
+                android:layout_height="57dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/add_to_cart"
+                android:text="Add Item"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FoodIngredentForMenuAdmin" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#DA61501B"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_admin_screen">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/userbutton"
+        android:layout_width="374dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/designbutton"
+        android:text="USER"
+        android:textColor="#1B1515"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Adminbutton"
+        android:layout_width="374dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/designbutton"
+        android:text="ADMIN"
+        android:textColor="#141212"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userbutton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

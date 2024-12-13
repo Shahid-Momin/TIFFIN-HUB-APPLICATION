@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TIFFINHUBS"
+        tools:targetApi="31">
+        <activity
+            android:name=".FirstAdminUse.OrderDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FirstAdminUse.AdminOrderDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recentOrderitems"
+            android:exported="false" />
+        <activity
+            android:name=".Vendor_menu01"
+            android:exported="false" />
+        <activity
+            android:name=".FirstAdminUse.Admin_CreateNewVendorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FirstAdminUse.AdminOutForDeliveryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FirstAdminUse.Admin_ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FirstAdminUse.Admin_PendingOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FirstAdminUse.Admin_AllitemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FirstAdminUse.Admin_AdditemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FirstAdminUse.MainActivity2Admin"
+            android:exported="false" />
+        <activity
+            android:name=".FirstAdminUse.firstadminsignup"
+            android:exported="false" />
+        <activity
+            android:name=".FirstAdminUse.firstadminlogin"
+            android:exported="false" />
+        <activity
+            android:name=".PayOuutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Last_Congrats"
+            android:exported="false" />
+        <activity
+            android:name=".DetailsMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view_menu_for_home1"
+            android:exported="false" />
+        <activity
+            android:name=".choose_location"
+            android:exported="false" />
+        <activity
+            android:name=".user_sign_up_page"
+            android:exported="false" />
+        <activity
+            android:name=".user_login_page"
+            android:exported="false" />
+        <activity
+            android:name=".user_admin_screen"
+            android:exported="false" />
+        <activity
+            android:name=".StartPage_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

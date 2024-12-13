@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:elevation="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/Adminfoodimageview"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/aloo_gobi" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/AdminAllItemVendorname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:text="Rizwan hotel"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/cardView13"
+                app:layout_constraintTop_toTopOf="@+id/cardView13" />
+
+            <TextView
+                android:id="@+id/Adminfoodname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spicy Crab Fresh"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/AdminAllItemVendorname"
+                app:layout_constraintStart_toStartOf="@+id/AdminAllItemVendorname"
+                app:layout_constraintTop_toBottomOf="@+id/AdminAllItemVendorname" />
+
+            <TextView
+                android:id="@+id/Adminfoodprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:text="Rs.50"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView13"
+                app:layout_constraintStart_toEndOf="@+id/cardView13" />
+
+            <ImageButton
+                android:id="@+id/Adminminusbutton05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/minus_svgrepo_com__1_"
+                android:background="@android:color/transparent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/Admincountity"
+                app:layout_constraintEnd_toStartOf="@+id/Admincountity"
+                app:layout_constraintTop_toTopOf="@+id/Admincountity" />
+
+            <ImageButton
+                android:id="@+id/Adminplusbutton06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/plus_svgrepo_com__1_"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Admincountity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/Adminplusbutton06"
+                app:layout_constraintEnd_toStartOf="@+id/Adminplusbutton06"
+                app:layout_constraintTop_toTopOf="@+id/Adminplusbutton06" />
+
+            <ImageButton
+                android:id="@+id/Admintrashbin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/trash_alt_svgrepo_com"
+                android:layout_marginTop="16dp"
+                android:paddingBottom="14dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="@+id/Adminplusbutton06"
+                app:layout_constraintStart_toStartOf="@+id/Adminminusbutton05"
+                app:layout_constraintTop_toBottomOf="@+id/Adminminusbutton05" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
